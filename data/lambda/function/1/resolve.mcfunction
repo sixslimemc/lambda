@@ -22,7 +22,7 @@ data modify storage lambda:out resolve.result.to set from storage lambda:in reso
 
 scoreboard players set *x _lambda 1
 
-execute if data storage lambda:in resolve{execute:true} store result score *x _lambda run function lambda:-/lambdar/1/execute with storage lambda:out resolve.result
+execute if data storage lambda:in resolve{execute:true} store result score *x _lambda run function lambda:-/1/execute with storage lambda:out resolve.result
 
 data remove storage lambda:in resolve
 
