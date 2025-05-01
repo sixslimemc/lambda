@@ -1,14 +1,14 @@
 
 Lambda<^T, ^R> := {
-    in: $storagePath<^T>
+    in: $storage<^T>
     pre_run? $command
     command? $command
-    out: $storagePath<^R>
+    out: $storage<^R>
 }
 
 Lambdar<^T, ^R> := {
     pre_run: $command
-    command: command
+    command: $command
     in: $storage<^T>
     out: $storage<^R>
     from: $storage<^T>
