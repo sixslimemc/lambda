@@ -10,4 +10,6 @@ data modify storage slimecore:in manifest.display.summary set value "TODO"
 data modify storage slimecore:in manifest.url set value "TODO"
 data modify storage slimecore:in manifest.author set value {name:"SixSlime", url:"https://github.com/sixslime"}
 
+data modify storage slimecore:in manifest.library set value true
+
 function slimecore:manifest
