@@ -17,8 +17,8 @@ Lambdar<^I, ^R> := {
     pre_run: $command
     command: $command
     in: $storage<^I>
-    out: $storage<^R>
     from: $storage<^I>
+    out: $storage<^R>
     to: $storage<^R>
 }
 
@@ -27,7 +27,8 @@ Lambdar<^Ia, ^Ib, ^R> := {
     command: $command
     in_0: $storage<^Ia>
     in_1: $storage<^Ib>
+    from_0: $storage<^Ia>
+    from_1: $storage<^Ib>
     out: $storage<^R>
-    from: $storage<^I>
     to: $storage<^R>
 }
