@@ -1,16 +1,33 @@
 
-Lambda<^T, ^R> := {
+Lambda<^I, ^R> := {
     in: $storage<^T>
     pre_run? $command
     command? $command
     out: $storage<^R>
 }
 
-Lambdar<^T, ^R> := {
+Lambda<^Ia, ^Ib, ^R> := {
+    in: [$storage<^Ia>, $storage<^Ib>]
+    pre_run? $command
+    command? $command
+    out: $storage<^R>
+}
+
+Lambdar<^I, ^R> := {
     pre_run: $command
     command: $command
-    in: $storage<^T>
+    in: $storage<^I>
     out: $storage<^R>
-    from: $storage<^T>
+    from: $storage<^I>
+    to: $storage<^R>
+}
+
+Lambdar<^Ia, ^Ib, ^R> := {
+    pre_run: $command
+    command: $command
+    in_0: $storage<^Ia>
+    in_1: $storage<^Ib>
+    out: $storage<^R>
+    from: $storage<^I>
     to: $storage<^R>
 }

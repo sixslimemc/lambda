@@ -1,14 +1,15 @@
 #> lambda : 1/resolve
+# ^ I
+# ^ R
 #--------------------
-# -> lambda: Lambda<^T, ^R>
-# -> direct: {in: $storage<^T>, out: $storage<^R>}
-# => execute: bool = false
+# -> lambda: Lambda<^I, ^R>
+# -> direct: {in: $storage<^I>, out: $storage<^R>}
 #--------------------
-# -> result: Lamdar<^T, ^R>
+# -> result: Lamdar<^I, ^R>
 #--------------------
 # TODO
 #--------------------
-# ..:
+# 1.
 #--------------------
 
 data remove storage lambda:out resolve
@@ -20,10 +21,6 @@ data modify storage lambda:out resolve.result set from storage lambda:_ util.fil
 data modify storage lambda:out resolve.result.from set from storage lambda:in resolve.direct.in
 data modify storage lambda:out resolve.result.to set from storage lambda:in resolve.direct.out
 
-scoreboard players set *x _lambda 1
-
-execute if data storage lambda:in resolve{execute:true} store result score *x _lambda run function lambda:-/1/execute with storage lambda:out resolve.result
-
 data remove storage lambda:in resolve
 
-return run scoreboard players get *x _lambda
+return 1
