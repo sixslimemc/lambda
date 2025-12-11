@@ -1,0 +1,12 @@
+
+inject struct ::lambda::mcdoc::api::In {
+    FUNCTION_NAME: struct In {
+        
+    }
+}
+
+inject struct ::lambda::mcdoc::api::Out {
+    FUNCTION_NAME: struct Out {
+
+    }
+}

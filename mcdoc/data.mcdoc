@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[lambda:data] to struct Data {
+
+}

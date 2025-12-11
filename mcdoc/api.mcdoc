@@ -1,0 +1,23 @@
+
+dispatch minecraft:storage[lambda:in] to struct In {
+    [any]: any
+}
+dispatch minecraft:storage[lambda:out] to struct Out {
+    [any]: any
+}
+
+dispatch minecraft:storage[lambda:api] to struct Api {
+
+}
+
+dispatch minecraft:storage[lambda:hook] to struct Hook {
+
+}
+
+dispatch minecraft:storage[lambda:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[lambda:abstract/out] to struct AbstractOut {
+
+}
