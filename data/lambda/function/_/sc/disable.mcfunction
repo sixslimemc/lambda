@@ -1,4 +1,4 @@
-#> lambda:_/disable
+#> lambda:_/sc/disable
 # @ DISABLE
 
 # TODO

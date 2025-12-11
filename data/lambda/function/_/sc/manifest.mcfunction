@@ -1,4 +1,4 @@
-#> lambda:_/manifest
+#> lambda:_/sc/manifest
 # @ MANIFEST
 
 data modify storage slimecore:in manifest.pack set value {}

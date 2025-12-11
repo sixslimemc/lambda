@@ -1,4 +1,4 @@
-#> lambda:_/uninstall
+#> lambda:_/sc/uninstall
 # @ UNINSTALL
 
 # TODO

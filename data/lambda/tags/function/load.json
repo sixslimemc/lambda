@@ -1,5 +1,5 @@
 {
     "values": [
-        "lambda:_/load"
+        "lambda:_/sc/load"
     ]
 }
