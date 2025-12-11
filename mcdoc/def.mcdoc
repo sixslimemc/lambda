@@ -1,0 +1,58 @@
+
+/// :: `data modify storage ^ set value <T>`
+type StoragePath<T> = string
+type Command = #[command] string
+
+type Lambda1<TIn, TOut> = struct {
+    in: StoragePath<TIn>,
+    pre_run?: Command,
+    command?: Command,
+    out: StoragePath<TOut>
+}
+
+type Lambda2<TIn1, TIn2, TOut> = struct {
+    in: [StoragePath<TIn1>, StoragePath<TIn2>],
+    pre_run?: Command,
+    command?: Command,
+    out: StoragePath<TOut>
+}
+
+type Lambda3<TIn1, TIn2, TIn3, TOut> = struct {
+    in: [StoragePath<TIn1>, StoragePath<TIn2>, StoragePath<TIn3>],
+    pre_run?: Command,
+    command?: Command,
+    out: StoragePath<TOut>
+}
+
+type Lambdar1<TIn1, TOut> = struct {
+    pre_run: Command,
+    command: Command,
+    in_0: StoragePath<TIn1>,
+    from_0: StoragePath<TIn1>,
+    out: StoragePath<TOut>,
+    to: StoragePath<TOut>,
+}
+
+type Lambdar2<TIn1, TIn2, TOut> = struct {
+    pre_run: Command,
+    command: Command,
+    in_0: StoragePath<TIn1>,
+    in_1: StoragePath<TIn2>,
+    from_0: StoragePath<TIn1>,
+    from_1: StoragePath<TIn2>,
+    out: StoragePath<TOut>,
+    to: StoragePath<TOut>,
+}
+
+type Lambdar3<TIn1, TIn2, TIn3, TOut> = struct {
+    pre_run: Command,
+    command: Command,
+    in_0: StoragePath<TIn1>,
+    in_1: StoragePath<TIn2>,
+    in_2: StoragePath<TIn3>,
+    from_0: StoragePath<TIn1>,
+    from_1: StoragePath<TIn2>,
+    from_2: StoragePath<TIn3>,
+    out: StoragePath<TOut>,
+    to: StoragePath<TOut>,
+}

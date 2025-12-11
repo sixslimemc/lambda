@@ -1,3 +1,4 @@
+use ::lambda::mcdoc::def::Command
 
 struct VariableRegister {
     [string]: any
@@ -11,6 +12,9 @@ dispatch minecraft:storage[lambda:_] to struct {
     u: VariableRegister,
     /// in-scope temp
     x: VariableRegister,
+    const: struct {
+        empty_command_fill: Command
+    }
 }
 dispatch minecraft:storage[lambda:_/in] to struct {
     [any]: any
