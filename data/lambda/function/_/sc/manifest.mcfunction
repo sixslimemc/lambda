@@ -1,7 +1,7 @@
 #> lambda:_/sc/manifest
 # @ MANIFEST
 
-data modify storage slimecore:in manifest.pack set value {}
+data remove storage slimecore:in manifest.pack
 
 data modify storage slimecore:in manifest.pack.pack_id set value "lambda"
 data modify storage slimecore:in manifest.pack.author_id set value "sixslime"
