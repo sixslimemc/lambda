@@ -1,0 +1,9 @@
+
+// TODO: fill properly when https://github.com/SpyglassMC/Spyglass/issues/1914 gets resolved.
+
+dispatch minecraft:storage[lambda:in] to struct In {
+    resolve: any
+}
+dispatch minecraft:storage[lambda:out] to struct Out {
+    resolve: any
+}

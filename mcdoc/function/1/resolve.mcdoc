@@ -1,0 +1,15 @@
+use ::lambda::mcdoc::def::Lambda1
+use ::lambda::mcdoc::def::Lambdar1
+use ::lambda::mcdoc::def::StoragePath
+
+type In<TIn, TResult> = struct {
+    lambda: Lambda1<TIn, TResult>,
+    direct: struct DirectArgs {
+        in: StoragePath<TIn>,
+        out: StoragePath<TResult>,
+    }
+}
+
+type Out<TIn, TResult> = struct {
+    result: Lambdar1<TIn, TResult>,
+}
