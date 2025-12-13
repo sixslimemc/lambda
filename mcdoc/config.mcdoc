@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[lambda:config] to struct Config {
-
-}

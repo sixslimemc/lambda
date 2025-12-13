@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[lambda:api] to struct Api {
-
-}
