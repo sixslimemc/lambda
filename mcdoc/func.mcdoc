@@ -2,8 +2,16 @@
 // TODO: fill properly when https://github.com/SpyglassMC/Spyglass/issues/1914 gets resolved.
 
 dispatch minecraft:storage[lambda:in] to struct In {
-    resolve: any
+    resolve: (
+        super::function::a::resolve::In<any, any> |
+        super::function::b::resolve::In<any, any, any> |
+        super::function::c::resolve::In<any, any, any, any> |
+    )
 }
 dispatch minecraft:storage[lambda:out] to struct Out {
-    resolve: any
+    resolve: (
+        super::function::a::resolve::Out<any, any> |
+        super::function::b::resolve::Out<any, any, any> |
+        super::function::c::resolve::Out<any, any, any, any> |
+    )
 }
