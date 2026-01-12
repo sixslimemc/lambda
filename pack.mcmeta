@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "TODO",
+    "description": "Structured, macro-based, lambdas.",
     "min_format": 94,
     "max_format": 94
   }
